@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabricantes - USP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            min-height: 100vh;
+            page-break-after: always;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .table-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background-color: #007BFF;
+            color: white;
+        }
+        .navigation-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .navigation-links a {
+            margin: 0 5px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            color: #007BFF;
+            background-color: white;
+        }
+        .navigation-links a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fabricantes - USP</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="medicamentos.html">Medicamentos</a>
+    <a href="fabricantes.html">Fabricantes</a>
+    <a href="estandares.html">Estándares de Calidad</a>
+    <a href="estudios.html">Estudios</a>
+    <a href="ingredientes.html">Ingredientes</a>
+    <a href="login.html">Iniciar Sesión</a>
+</nav>
+
+<section id="fabricantes1">
+    <div class="table-container">
+        <h2>Fabricantes - Página 1</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>País</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PharmaCorp</td>
+                    <td>123 Main St, Ciudad</td>
+                    <td>México</td>
+                </tr>
+                <tr>
+                    <td>HealthPlus</td>
+                    <td>456 Oak Ave, Los Ángeles</td>
+                    <td>Estados Unidos</td>
+                </tr>
+                <tr>
+                    <td>MedicinaGlobal</td>
+                    <td>789 Pine Blvd, Madrid</td>
+                    <td>España</td>
+                </tr>
+                <tr>
+                    <td>BioTech</td>
+                    <td>101 Maple Rd, Berlín</td>
+                    <td>Alemania</td>
+                </tr>
+                <tr>
+                    <td>SaludAvanzada</td>
+                    <td>202 Cedar St, Buenos Aires</td>
+                    <td>Argentina</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="navigation-links">
+        <a href="#fabricantes2">Siguiente</a>
+    </div>
+</section>
+
+<section id="fabricantes2">
+    <div class="table-container">
+        <h2>Fabricantes - Página 2</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>País</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>VitalMed</td>
+                    <td>303 Birch Ln, Londres</td>
+                    <td>Reino Unido</td>
+                </tr>
+                <tr>
+                    <td>LifeCare</td>
+                    <td>404 Elm Dr, Toronto</td>
+                    <td>Canadá</td>
+                </tr>
+                <tr>
+                    <td>FarmaExcel</td>
+                    <td>505 Palm Ct, Bogotá</td>
+                    <td>Colombia</td>
+                </tr>
+                <tr>
+                    <td>MediCore</td>
+                    <td>606 Cherry Rd, Ciudad de México</td>
+                    <td>México</td>
+                </tr>
+                <tr>
+                    <td>NovaPharma</td>
+                    <td>707 Oak Grove, París</td>
+                    <td>Francia</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="navigation-links">
+        <a href="#fabricantes1">Anterior</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 USP - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

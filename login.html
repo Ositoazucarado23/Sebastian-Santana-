@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - USP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .form-container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .form-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .form-links a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .form-container .back-btn {
+            background-color: #6c757d;
+            margin-top: 10px;
+        }
+        .form-container .back-btn:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Iniciar Sesión - USP</h1>
+</header>
+
+<div class="form-container">
+    <h2>Iniciar sesión</h2>
+    <form id="login-form">
+        <input type="text" id="username" placeholder="Nombre de usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+
+    <div class="form-links">
+        <p>¿No tienes una cuenta? <a href="#" id="show-register">Regístrate</a></p>
+    </div>
+
+    <!-- Botón para regresar al inicio -->
+    <button class="back-btn" onclick="window.location.href='index.html'">Regresar al inicio</button>
+</div>
+
+<!-- Registro de nuevo usuario -->
+<div class="form-container" id="register-container" style="display: none;">
+    <h2>Registrarse</h2>
+    <form id="register-form">
+        <input type="text" id="new-username" placeholder="Nombre de usuario" required>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <input type="password" id="new-password" placeholder="Contraseña" required>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <div class="form-links">
+        <p>¿Ya tienes una cuenta? <a href="#" id="show-login">Inicia sesión</a></p>
+    </div>
+
+    <!-- Botón para regresar al inicio -->
+    <button class="back-btn" onclick="window.location.href='index.html'">Regresar al inicio</button>
+</div>
+
+<script>
+    // Función para almacenar usuarios en el almacenamiento local (localStorage)
+    function saveUser(username, password, email) {
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+        users.push({ username, password, email });
+        localStorage.setItem("users", JSON.stringify(users));
+    }
+
+    // Función para verificar si el usuario existe
+    function verifyUser(username, password) {
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+        return users.some(user => user.username === username && user.password === password);
+    }
+
+    // Iniciar sesión
+    document.getElementById("login-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (verifyUser(username, password)) {
+            alert("Inicio de sesión exitoso");
+            window.location.href = "index.html"; // Redirigir a la página principal
+        } else {
+            alert("Usuario o contraseña incorrectos");
+        }
+    });
+
+    // Mostrar formulario de registro
+    document.getElementById("show-register").addEventListener("click", function() {
+        document.getElementById("login-form").style.display = "none";
+        document.getElementById("register-container").style.display = "block";
+    });
+
+    // Mostrar formulario de inicio de sesión
+    document.getElementById("show-login").addEventListener("click", function() {
+        document.getElementById("register-container").style.display = "none";
+        document.getElementById("login-form").style.display = "block";
+    });
+
+    // Registrar un nuevo usuario
+    document.getElementById("register-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const username = document.getElementById("new-username").value;
+        const password = document.getElementById("new-password").value;
+        const email = document.getElementById("email").value;
+
+        saveUser(username, password, email);
+        alert("Usuario registrado con éxito");
+        document.getElementById("register-container").style.display = "none";
+        document.getElementById("login-form").style.display = "block";
+    });
+</script>
+
+</body>
+</html>

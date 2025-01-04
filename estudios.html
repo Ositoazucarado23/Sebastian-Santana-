@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudios - USP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            min-height: 100vh;
+            page-break-after: always;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .table-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background-color: #007BFF;
+            color: white;
+        }
+        .navigation-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .navigation-links a {
+            margin: 0 5px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            color: #007BFF;
+            background-color: white;
+        }
+        .navigation-links a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Estudios - USP</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="medicamentos.html">Medicamentos</a>
+    <a href="fabricantes.html">Fabricantes</a>
+    <a href="estandares.html">Estándares de Calidad</a>
+    <a href="estudios.html">Estudios</a>
+    <a href="ingredientes.html">Ingredientes</a>
+    <a href="login.html">Iniciar Sesión</a>
+</nav>
+
+<section id="intro">
+    <div class="table-container">
+        <h2>Introducción a los Estudios</h2>
+        <p>
+            En USP, la investigación es un componente clave en el desarrollo de medicamentos. Realizamos diversos estudios 
+            para garantizar que nuestros productos sean eficaces, seguros y cumplan con los estándares internacionales. 
+            Los estudios clínicos y preclínicos proporcionan información fundamental que valida la calidad de nuestros productos.
+        </p>
+        <div class="navigation-links">
+            <a href="#estudios">Ver Estudios</a>
+        </div>
+    </div>
+</section>
+
+<section id="estudios">
+    <div class="table-container">
+        <h2>Listado de Estudios Realizados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre del Estudio</th>
+                    <th>Fecha</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Estudio de Eficacia</td>
+                    <td>2023-01-15</td>
+                    <td>Resultados positivos en el 95% de los casos</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Estudio de Seguridad</td>
+                    <td>2023-02-10</td>
+                    <td>Efectos secundarios mínimos</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Estudio de Bioequivalencia</td>
+                    <td>2023-03-10</td>
+                    <td>Cumple con estándares internacionales</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Estudio Clínico Fase II</td>
+                    <td>2023-04-05</td>
+                    <td>Mejoras significativas en pacientes</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Prueba de Toxicidad</td>
+                    <td>2023-05-20</td>
+                    <td>Nivel de toxicidad bajo</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Estudio Farmacocinético</td>
+                    <td>2023-06-15</td>
+                    <td>Absorción rápida y eficaz</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Estudio Preclínico</td>
+                    <td>2023-07-10</td>
+                    <td>Resultados prometedores en animales</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Estudio Comparativo</td>
+                    <td>2023-08-25</td>
+                    <td>Similar eficacia a medicamentos existentes</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Estudio de Adherencia</td>
+                    <td>2023-09-05</td>
+                    <td>Alta aceptación por los pacientes</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Estudio de Dosis</td>
+                    <td>2023-10-15</td>
+                    <td>Efectos óptimos a dosis recomendadas</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="navigation-links">
+            <a href="#intro">Volver a Introducción</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 USP - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

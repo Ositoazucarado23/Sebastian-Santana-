@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredientes - USP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            min-height: 100vh;
+            page-break-after: always;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .table-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background-color: #007BFF;
+            color: white;
+        }
+        .navigation-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .navigation-links a {
+            margin: 0 5px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            color: #007BFF;
+            background-color: white;
+        }
+        .navigation-links a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ingredientes - USP</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="medicamentos.html">Medicamentos</a>
+    <a href="fabricantes.html">Fabricantes</a>
+    <a href="estandares.html">Estándares de Calidad</a>
+    <a href="estudios.html">Estudios</a>
+    <a href="ingredientes.html">Ingredientes</a>
+    <a href="login.html">Iniciar Sesión</a>
+</nav>
+
+<section id="intro">
+    <div class="table-container">
+        <h2>Introducción a los Ingredientes de los Medicamentos</h2>
+        <p>
+            En USP, trabajamos con ingredientes activos de la más alta calidad para garantizar la eficacia y seguridad de nuestros medicamentos. 
+            Los ingredientes son componentes esenciales en cada fórmula, y su selección está respaldada por rigurosos estándares de calidad. 
+            A continuación, te mostramos algunos de los ingredientes más comunes en nuestros productos y sus dosis.
+        </p>
+        <div class="navigation-links">
+            <a href="#ingredientes">Ver Ingredientes</a>
+        </div>
+    </div>
+</section>
+
+<section id="ingredientes">
+    <div class="table-container">
+        <h2>Listado de Ingredientes de Medicamentos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ID del Medicamento</th>
+                    <th>Ingrediente</th>
+                    <th>Dosis (mg)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>Paracetamol</td>
+                    <td>500.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>Ibuprofeno</td>
+                    <td>200.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>Amoxicilina</td>
+                    <td>250.00</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>Clavulanato</td>
+                    <td>125.00</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>Omeprazol</td>
+                    <td>20.00</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>Metformina</td>
+                    <td>850.00</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>Losartán</td>
+                    <td>50.00</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>Salbutamol</td>
+                    <td>100.00</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>Ranitidina</td>
+                    <td>150.00</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>9</td>
+                    <td>Clorfenamina</td>
+                    <td>4.00</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>10</td>
+                    <td>Ácido Acetilsalicílico</td>
+                    <td>100.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="navigation-links">
+            <a href="#intro">Volver a Introducción</a>
+        </div>
+    </div>
+</section>
